@@ -27,7 +27,7 @@ const DashBoard = ({setCurrentPage}) => {
                 <Card.Body>
                   <Card.Title> LESSONS</Card.Title>
                   <Card.Text>Lorem ipsum dolor sit amet, </Card.Text>
-                  <Button variant="success"  onClick={() => setCurrentPage("Assessment")} size='lg'style={{position: "relative", left: "300px", fontWeight: 'bold'}}>Let's Begin!</Button>
+                  <Button variant="success"  onClick={() => setCurrentPage("Lessons")} size='lg'style={{position: "relative", left: "300px", fontWeight: 'bold'}}>Let's Begin!</Button>
                 </Card.Body>
               </Card>
             </Col>
