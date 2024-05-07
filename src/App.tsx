@@ -8,6 +8,7 @@ import SearchButton from './Components/Buttons/search';
 import Sidebar from './Components/Sidebar/sidebar';
 import DashBoard from './Components/Pages/DashBoard';
 import Assessment from './Components/Pages/Assessment';
+import Lessons from './Components/Pages/Lessons';
 import OralAssessment from './Components/Pages/OralAssessment';const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState('DashBoard');
@@ -42,6 +43,7 @@ import OralAssessment from './Components/Pages/OralAssessment';const App = () =>
           <Col>
         {currentPage === 'DashBoard' && <DashBoard setCurrentPage={setCurrentPage}/>}
         {currentPage === 'Assessment' && <Assessment setCurrentPage={setCurrentPage}/>}
+        {currentPage === 'Lessons' && <Lessons setCurrentPage={setCurrentPage}/>}
         {currentPage === 'OralAssessment' && <OralAssessment setCurrentPage={setCurrentPage}/>}
         </Col>
       </Row>

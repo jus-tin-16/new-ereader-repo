@@ -25,7 +25,7 @@ const Sidebar = ({setCurrentPage,sendToggle}) => {
       <ul className="sidebar-menu">
         
         <li onClick={() => setCurrentPage('DashBoard')}><CIcon icon={cilScreenDesktop} style={{width: '45px', height: '45px'}}/>  DASHBOARD</li>
-        <li><CIcon icon={cilBook} style={{width: '45px', height: '45px'}}/> LESSONS</li>
+        <li onClick={() => setCurrentPage('Lessons')}><CIcon icon={cilBook} style={{width: '45px', height: '45px'}}/> LESSONS</li>
         <li onClick={() => setCurrentPage('Assessment')}><CIcon icon={cilPencil} style={{width: '45px', height: '45px'}}/> ASSESSMENT</li>
       </ul>
     </div>
