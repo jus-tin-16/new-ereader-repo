@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, ThemeProvider } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
@@ -8,7 +7,6 @@ import {Col} from 'react-bootstrap';
 import img1 from '../Images/Number1.png';
 
 const DashBoard = ({setCurrentPage}) => {
-  const test = ['1', '2'];
   return (
     <ThemeProvider
     breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
@@ -25,7 +23,7 @@ const DashBoard = ({setCurrentPage}) => {
         <Card.Body>
           <Card.Title>Oral Language Assessment</Card.Title>
           <Card.Text>Lorem ipsum dolor sit amet, </Card.Text>
-          <Button variant="success" style={{fontWeight: 'bold'}}  onClick={() => setCurrentPage("OralAssessment")} size='lg'style={{position: "relative", left: "350px", fontWeight: 'bold'}}>START</Button>
+          <Button variant="success"  onClick={() => setCurrentPage("OralAssessment")} size='lg'style={{position: "relative", left: "350px", fontWeight: 'bold'}}>START</Button>
         </Card.Body>
         </Card>
         </Col>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
@@ -8,7 +7,6 @@ import {Col} from 'react-bootstrap';
 import {ThemeProvider} from 'react-bootstrap';
 
 const Lessons = ({setCurrentPage}) => {
-    const test = ['1', '2'];
     return (
         <ThemeProvider breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
         minBreakpoint="xxs">
