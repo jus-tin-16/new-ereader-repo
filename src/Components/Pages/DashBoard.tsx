@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
@@ -10,7 +9,6 @@ import img1 from '../Images/Number1.png';
 
 
 const DashBoard = ({setCurrentPage}) => {
-  const test = ['1', '2'];
   return (
     <ThemeProvider
     breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
