@@ -7,6 +7,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import DashBoard from './Components/Pages/DashBoard';
+import Assessment from './Components/Pages/Assessment';
+import OralAssessment from './Components/Pages/OralAssessment';
+import Lessons from './Components/Pages/Lessons';
+import Lesson1 from './Components/Lessons/Lesson1';
+import Short_a from './Components/Lessons/Chapters/Short_a';
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -35,7 +40,7 @@ const App = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-        <Container fluid style={isSidebarOpen ?  ({ marginTop: '50px', position: 'relative', right: '200px'}) : ({padding: '50px'})}>
+        <Container fluid style={isSidebarOpen ?  ({ padding: '50px', position: 'relative', left: '320px'}) : ({padding: '50px'})}>
           <Row>
               <Col>
                 {currentPage === 'DashBoard' && <DashBoard setCurrentPage={setCurrentPage}/>}
