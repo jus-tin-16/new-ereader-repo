@@ -7,7 +7,7 @@ import {Row} from 'react-bootstrap';
 import {Col} from 'react-bootstrap';
 import {ThemeProvider} from 'react-bootstrap';
 
-const Lessons = ({setcurrentPage}) => {
+const Lessons = ({setCurrentPage}) => {
     const test = ['1', '2'];
     return (
         <ThemeProvider breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
@@ -22,7 +22,7 @@ const Lessons = ({setcurrentPage}) => {
                             <Card.Body>
                                 <Card.Title>Module 1: Letter Sounds</Card.Title>
                                 <Card.Text>Word Awareness, Syllable Blending, Syllable Counting, Rhyme.</Card.Text>
-                                <Button variant="success"  onClick={() => setCurrentPage("Lessons")} size='lg'style={{position: "relative", left: "300px", fontWeight: 'bold'}}>Let's Begin!</Button>
+                                <Button variant="success"  onClick={() => setCurrentPage("Lesson1")} size='lg'style={{position: "relative", left: "300px", fontWeight: 'bold'}}>Let's Begin!</Button>
                             </Card.Body>
                         </Card>
                     </Col>

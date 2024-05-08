@@ -9,6 +9,8 @@ import Sidebar from './Components/Sidebar/sidebar';
 import DashBoard from './Components/Pages/DashBoard';
 import Assessment from './Components/Pages/Assessment';
 import Lessons from './Components/Pages/Lessons';
+import Lesson1 from './Components/Lessons/Lesson1';
+import Short_a from './Components/Lessons/Chapters/Short_a';
 import OralAssessment from './Components/Pages/OralAssessment';const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState('DashBoard');
@@ -22,8 +24,8 @@ import OralAssessment from './Components/Pages/OralAssessment';const App = () =>
     breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
     minBreakpoint="xxs"
   >
-    <body style={{overflow: 'auto', boxSizing: 'border-box', backgroundColor: 'burlywood', maxWidth: '1920px', width: '160%'}} >
-    <Sidebar setCurrentPage={setCurrentPage} sendToggle={toggleSidebar} />
+    <body style={{overflow: 'auto', maxWidth: '1920px', width: '160%'}} >
+    <Sidebar setCurrentPage={setCurrentPage} sendToggle={toggleSidebar}/>
     <Container>
       <Row>
         <Col>
@@ -44,6 +46,8 @@ import OralAssessment from './Components/Pages/OralAssessment';const App = () =>
         {currentPage === 'DashBoard' && <DashBoard setCurrentPage={setCurrentPage}/>}
         {currentPage === 'Assessment' && <Assessment setCurrentPage={setCurrentPage}/>}
         {currentPage === 'Lessons' && <Lessons setCurrentPage={setCurrentPage}/>}
+        {currentPage === 'Lesson1' && <Lesson1 setCurrentPage={setCurrentPage}/>}
+        {currentPage === 'Short_a' && <Short_a setCurrentPage={setCurrentPage}/>}
         {currentPage === 'OralAssessment' && <OralAssessment setCurrentPage={setCurrentPage}/>}
         </Col>
       </Row>
