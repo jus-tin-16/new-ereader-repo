@@ -1,26 +1,37 @@
-import React from 'react';
 import { Container } from 'react-bootstrap';
 import {ThemeProvider} from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import {Row} from 'react-bootstrap';
 import {Col} from 'react-bootstrap';
-import { Card } from 'react-bootstrap';
+import {Stack} from 'react-bootstrap';
 
 const Short_a = ({setCurrentPage}) => {
     const test = ['1', '2'];
     return (
         <ThemeProvider breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']} minBreakpoint="xxs">
-            <Container fluid style={{backgroundColor: 'red'}}>
+            <Container fluid="sm" style={{padding: '20px'}}>
                 <Row>
-                    <Card border= "success" style={{ width: '1427px', height: '366px'}}>
-                    </Card>    
                     <Col>
                         <h1>Short 'a'</h1>
+                        Word Awareness, Syllable Blending, Syllable Counting, Rhyme.
                     </Col>
                 </Row>
                 <Row>
-                    <Col>1 of 2</Col>
-                    <Col>2 of 2</Col>
+                    <Col md="auto">
+                        <Stack gap={35}>
+                            <div className="d-grid gap-2">
+                                <Button variant="primary" size="lg">Sound it Out Slowly</Button>
+                                <Button variant="secondary" size="lg">Sound it Out Quickly</Button>
+                                <Button variant="secondary" size="lg">Let Me Sound it Out</Button>
+                                <Button variant="secondary" size="lg">Audio Flashcards</Button>
+                                <Button variant="secondary" size="lg">Silent Flashcards</Button>
+                                <Button variant="secondary" size="lg">Take the Quiz</Button>
+                            </div>
+                        </Stack>
+                    </Col>
+                    <Col md="auto">
+                        <Container style={{width: '650px',height: '300px', border: '1px solid black'}}></Container>
+                    </Col>
                 </Row>
             </Container>
         </ThemeProvider>
