@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Row} from 'react-bootstrap';
 import {Col} from 'react-bootstrap';
 import {ThemeProvider} from 'react-bootstrap';
+import img1 from '../Images/lesson1.jpg';
 
 const Lessons = ({setCurrentPage}) => {
     return (
@@ -17,8 +18,9 @@ const Lessons = ({setCurrentPage}) => {
                 <Row>
                     <Col class="col-md-5 col-md-offset-2">
                         <Card border="success" style={{ width: '30rem' }}> 
+                         <Card.Img variant="top" style={{borderBottom: 'gray 1px solid'}} src={img1}/>
                             <Card.Body>
-                                <Card.Title>Module 1: Letter Sounds</Card.Title>
+                                <Card.Title>Lesson 1: Letter Sounds</Card.Title>
                                 <Card.Text>Word Awareness, Syllable Blending, Syllable Counting, Rhyme.</Card.Text>
                                 <Button variant="success"  onClick={() => setCurrentPage("Lesson1")} size='lg'style={{position: "relative", left: "300px", fontWeight: 'bold'}}>Let's Begin!</Button>
                             </Card.Body>

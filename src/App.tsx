@@ -12,6 +12,11 @@ import OralAssessment from './Components/Pages/OralAssessment';
 import Lessons from './Components/Pages/Lessons';
 import Lesson1 from './Components/Lessons/Lesson1';
 import Short_a from './Components/Lessons/Chapters/Short_a';
+import Short_a_SIOS from './Components/Lessons/Chapters/Short_A/Short_a_SIOS';
+import Short_a_SIOQ from './Components/Lessons/Chapters/Short_A/Short_a_SIOQ';
+import Short_a_LMSIO from './Components/Lessons/Chapters/Short_A/Short_a_LMSIO';
+import Short_a_AF from './Components/Lessons/Chapters/Short_A/Short_a_AF';
+import Short_a_SF from './Components/Lessons/Chapters/Short_A/Short_a_SF';
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -48,6 +53,11 @@ const App = () => {
                 {currentPage === 'Lessons' && <Lessons setCurrentPage={setCurrentPage}/>}
                 {currentPage === 'Lesson1' && <Lesson1 setCurrentPage={setCurrentPage}/>}
                 {currentPage === 'Short_a' && <Short_a setCurrentPage={setCurrentPage}/>}
+                {currentPage === 'Short_a_SIOS' && <Short_a_SIOS setCurrentPage={setCurrentPage}/>}
+                {currentPage === 'Short_a_SIOQ' && <Short_a_SIOQ setCurrentPage={setCurrentPage}/>}
+                {currentPage === 'Short_a_LMSIO' && <Short_a_LMSIO setCurrentPage={setCurrentPage}/>}
+                {currentPage === 'Short_a_AF' && <Short_a_AF setCurrentPage={setCurrentPage}/>}
+                {currentPage === 'Short_a_SF' && <Short_a_SF setCurrentPage={setCurrentPage}/>}
                 {currentPage === 'OralAssessment' && <OralAssessment setCurrentPage={setCurrentPage}/>}
             </Col>
           </Row>

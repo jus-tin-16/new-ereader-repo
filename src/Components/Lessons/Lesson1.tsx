@@ -4,6 +4,11 @@ import { Container } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import img1 from '../Images/Number1.png';
+import short_a from '../Images/short_a.png';
+import short_e from '../Images/short_e.png';
+import short_i from '../Images/short_i.png';
+import short_o from '../Images/short_o.png';
+import short_u from '../Images/short_u.png';
 import CIcon from '@coreui/icons-react';
 import { cilArrowThickRight } from '@coreui/icons';
 
@@ -21,7 +26,7 @@ const Lesson1 = ({setCurrentPage}) => {
                 <Row>
                     <Row style={{paddingTop: '20px', paddingBottom: '20px'}}>
                         <Card border= "success" style={{ width: '1427px', height: '366px'}}>
-                            <Card.Img src={img1} style={{ position: 'absolute', width: '433px', height: '332px', left: '18px', top: '18px'}}/>
+                            <Card.Img src={short_a} style={{ position: 'absolute', width: '433px', height: '332px', left: '18px', top: '18px'}}/>
                             <Card.Body>
                                 <CardSubtitle style={{ position: 'absolute', left: '485px', top: '30px', fontSize: '46px'}}>Short 'a'</CardSubtitle>
                                 <CardTitle style={{ position: 'absolute', left: '485px', top: '82px', fontSize: '86px', fontWeight: 'bolder'}}>a as in fan</CardTitle>
@@ -32,7 +37,7 @@ const Lesson1 = ({setCurrentPage}) => {
                     </Row>
                     <Row style={{paddingTop: '20px', paddingBottom: '20px'}}>
                         <Card border= "success" style={{ width: '1427px', height: '366px'}}>
-                            <Card.Img src={img1} style={{ position: 'absolute', width: '433px', height: '332px', left: '18px', top: '18px'}}/>
+                            <Card.Img src={short_e} style={{ position: 'absolute', width: '433px', height: '332px', left: '18px', top: '18px'}}/>
                             <Card.Body>
                                 <CardSubtitle style={{ position: 'absolute', left: '485px', top: '30px', fontSize: '46px'}}>Short 'e'</CardSubtitle>
                                 <CardTitle style={{ position: 'absolute', left: '485px', top: '82px', fontSize: '86px', fontWeight: 'bolder'}}>e as in jet</CardTitle>
@@ -42,7 +47,7 @@ const Lesson1 = ({setCurrentPage}) => {
                     </Row>
                     <Row style={{paddingTop: '20px', paddingBottom: '20px'}}>
                         <Card border= "success" style={{ width: '1427px', height: '366px'}}>
-                            <Card.Img src={img1} style={{ position: 'absolute', width: '433px', height: '332px', left: '18px', top: '18px'}}/>
+                            <Card.Img src={short_i} style={{ position: 'absolute', width: '433px', height: '332px', left: '18px', top: '18px'}}/>
                             <Card.Body>
                                 <CardSubtitle style={{ position: 'absolute', left: '485px', top: '30px', fontSize: '46px'}}>Short 'i'</CardSubtitle>
                                 <CardTitle style={{ position: 'absolute', left: '485px', top: '82px', fontSize: '86px', fontWeight: 'bolder'}}>i as in pig</CardTitle>
@@ -52,7 +57,7 @@ const Lesson1 = ({setCurrentPage}) => {
                     </Row>
                     <Row style={{paddingTop: '20px', paddingBottom: '20px'}}>
                         <Card border= "success" style={{ width: '1427px', height: '366px'}}>
-                            <Card.Img src={img1} style={{ position: 'absolute', width: '433px', height: '332px', left: '18px', top: '18px'}}/>
+                            <Card.Img src={short_o} style={{ position: 'absolute', width: '433px', height: '332px', left: '18px', top: '18px'}}/>
                             <Card.Body>
                                 <CardSubtitle style={{ position: 'absolute', left: '485px', top: '30px', fontSize: '46px'}}>Short 'o'</CardSubtitle>
                                 <CardTitle style={{ position: 'absolute', left: '485px', top: '82px', fontSize: '86px', fontWeight: 'bolder'}}>o as in dog</CardTitle>
@@ -62,7 +67,7 @@ const Lesson1 = ({setCurrentPage}) => {
                     </Row>
                     <Row style={{paddingTop: '20px', paddingBottom: '20px'}}>
                         <Card border= "success" style={{ width: '1427px', height: '366px'}}>
-                            <Card.Img src={img1} style={{ position: 'absolute', width: '433px', height: '332px', left: '18px', top: '18px'}}/>
+                            <Card.Img src={short_u} style={{ position: 'absolute', width: '433px', height: '332px', left: '18px', top: '18px'}}/>
                             <Card.Body>
                                 <CardSubtitle style={{ position: 'absolute', left: '485px', top: '30px', fontSize: '46px'}}>Short 'u'</CardSubtitle>
                                 <CardTitle style={{ position: 'absolute', left: '485px', top: '82px', fontSize: '86px', fontWeight: 'bolder'}}>u as in bug</CardTitle>

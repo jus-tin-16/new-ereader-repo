@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Row} from 'react-bootstrap';
 import {Col} from 'react-bootstrap';
 import {ThemeProvider} from 'react-bootstrap';
-import img1 from '../Images/Number1.png';
+import img1 from '../Images/lessons.jpg';
+import img2 from '../Images/assessment.jpg';
 
 
 const DashBoard = ({setCurrentPage}) => {
@@ -31,7 +32,7 @@ const DashBoard = ({setCurrentPage}) => {
             </Col>
           <Col class='col-md-2'>
             <Card border="success" style={{ width: '30rem' }}> 
-                <Card.Img variant="top" style={{borderBottom: 'gray 1px solid'}} src={img1}/> 
+                <Card.Img variant="top" style={{borderBottom: 'gray 1px solid'}} src={img2}/> 
               <Card.Body>
                 <Card.Title> ASSESSMENT</Card.Title>
                 <Card.Text>Lorem ipsum dolor sit amet, </Card.Text>

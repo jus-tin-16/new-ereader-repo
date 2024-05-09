@@ -5,7 +5,7 @@ import {Row} from 'react-bootstrap';
 import {Col} from 'react-bootstrap';
 import {Stack} from 'react-bootstrap';
 
-const Short_a = ({setCurrentPage}) => {
+const Short_a_SIOQ = ({setCurrentPage}) => {
     const test = ['1', '2'];
     return (
         <ThemeProvider breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']} minBreakpoint="xxs">
@@ -20,11 +20,11 @@ const Short_a = ({setCurrentPage}) => {
                     <Col md="auto">
                         <Stack gap={35}>
                             <div className="d-grid gap-2">
-                                <Button variant="secondary" onClick={() => setCurrentPage("Short_a_SIOS")} size="lg">Sound it Out Slowly</Button>
-                                <Button variant="secondary" onClick={() => setCurrentPage("Short_a_SIOQ")} size="lg">Sound it Out Quickly</Button>
-                                <Button variant="secondary" onClick={() => setCurrentPage("Short_a_LMSIO")} size="lg">Let Me Sound it Out</Button>
-                                <Button variant="secondary" onClick={() => setCurrentPage("Short_a_AF")} size="lg">Audio Flashcards</Button>
-                                <Button variant="secondary" onClick={() => setCurrentPage("Short_a_SF")} size="lg">Silent Flashcards</Button> 
+                                <Button variant="secondary" size="lg">Sound it Out Slowly</Button>
+                                <Button variant="primary" size="lg">Sound it Out Quickly</Button>
+                                <Button variant="secondary" size="lg">Let Me Sound it Out</Button>
+                                <Button variant="secondary" size="lg">Audio Flashcards</Button>
+                                <Button variant="secondary" size="lg">Silent Flashcards</Button>
                                 <Button variant="secondary" size="lg">Take the Quiz</Button>
                             </div>
                         </Stack>
@@ -33,14 +33,9 @@ const Short_a = ({setCurrentPage}) => {
                         <Container style={{width: '650px',height: '300px', border: '1px solid black'}}></Container>
                     </Col>
                 </Row>
-                <Row>
-                    <Col>
-                    <Button variant="secondary" style={{}} onClick={() => setCurrentPage("Lesson1")} size="lg"> Go Back </Button>
-                    </Col>
-                </Row>
             </Container>
         </ThemeProvider>
     );
 };
 
-export default Short_a;
+export default Short_a_SIOQ;
